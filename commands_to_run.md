@@ -154,3 +154,23 @@ Try:
 python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
 ```
+
+---
+
+## 10) One-command run for macOS / Linux
+
+If you want to run the project from the project folder in one go, use:
+
+```bash
+source .venv/bin/activate && python -m src.rag.ingest && uvicorn src.api.main:app --host 127.0.0.1 --port 8000
+```
+
+### Windows
+
+```bash
+.venv\Scripts\activate && python -m src.rag.ingest && uvicorn src.api.main:app --host 127.0.0.1 --port 8000
+```
+
+This runs:
+1. the local index build
+2. the FastAPI server
