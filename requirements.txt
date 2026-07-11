@@ -1,0 +1,15 @@
+langchain
+langgraph
+langchain-community
+langchain-ollama
+chromadb
+pandas
+openpyxl
+fastapi
+uvicorn
+pydantic
+sentence-transformers
+langchain-core
+lxml
+beautifulsoup4
+html5lib
